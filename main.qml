@@ -6,4 +6,10 @@ Window {
     width: 640
     height: 480
     title: qsTr("Hello Dariush")
+
+    MyAnim{
+        width: parent.width * 0.5
+        height: parent.height * 0.5
+        anchors.centerIn: parent
+    }
 }

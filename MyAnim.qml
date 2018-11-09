@@ -2,6 +2,11 @@ import QtQuick 2.0
 
 Item {
 
+    signal starta
+    onStarta: anim1.restart()
+
+    signal stopa
+    onStopa: anim1.stop()
 
     Rectangle{
         id: myrec
@@ -25,7 +30,7 @@ Item {
     NumberAnimation {
         id: anim1
         loops: Animation.Infinite
-        running: true
+        running: false
         target: myrec
         property: "rotation"
         from:0; to: 180

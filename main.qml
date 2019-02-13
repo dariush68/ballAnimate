@@ -35,4 +35,9 @@ Window {
         }
 
     }
+
+    Button{
+        text: "test1"
+        anchors.bottom: parent.bottom
+    }
 }
